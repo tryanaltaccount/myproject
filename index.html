@@ -10,7 +10,12 @@
 
 <div class="col-sm-12">
     <h1 id="demo" style="text-align: center">Her radiant smile.</h1>
-        <img src="pic.JPG" class="img-responsive" style="margin: 0 auto"></img>
+    </br>
+    </br>
+    </br>
+    </br>
+    <img src="pic.jpg" class="img-responsive" style="margin: 0 auto" height=40% width=40%></img>
+    </br>
 </div>
 
 
@@ -75,10 +80,57 @@
                 "54" : "When she says 'See ya later mate' in a British accent.",
                 "55" : "When she opens my eyes to important social issues",
                 "56" : "When she sends me my horoscope",
-                "57" : "When she shares Tweets/videos with me"
+                "57" : "When she shares Tweets/videos with me",
+                "58" : "When she lets me wear her socks",
+                "59" : "How caring she is about all of her friends",
+                "60" : "Her unquestionable skill at Sit Stand Bend",
+                "61" : "When we wake up and she looks like an angel",
+                "62" : "How she likes to stay inside as much as I do",
+                "63" : "Her love for chicken tortilla soup",
+                "64" : "When she argues with Rick about important stuff",
+                "65" : "When she goes along with whatever weird bit I'm pulling on people",
+                "66" : "When she sings along and doesn't know all the words",
+                "67" : "How thoughtful she is. (Sometimes she brings me lemon squares.)",
+                "68" : "She made sure there was always a place for my blue hat.",
+                "69" : "She read all of Truth in Comedy.",
+                "70" : "When she laughs at scary movies",
+                "71" : "When she chases every opportunity",
+                "72" : "When she calls out bullshit on the daily",
+                "73" : "When she's such a reliable friend when people are in need",
+                "74" : "When she picks awesome movies",
+                "75" : "How she checks in when I'm looking sad",
+                "76" : "The girl knows how to host an improv show.",
+                "77" : "She's an excellent road trip partner",
+                "78" : "When she went with me to see the Boggy Creek Monster",
+                "79" : "She helped me escape Allen's Burgers alive.",
+                "80" : "When she lets me eat some of her food even though I said I didn't want any",
+                "81" : "She's a lean mean meme queen!",
+                "82" : "How she's such good friends with my roommate.",
+                "83" : "My family loves her too!",
+                "84" : "When we can just cuddle for long stretches without saying anything",
+                "85" : "When she nuzzles her nose against mine",
+                "86" : "She's an A+ texter.",
+                "87" : "When she voices her opinions",
+                "88" : "When we have awesome arguments",
+                "89" : "When she smiles all big and pretty for any picture",
+                "90" : "When she calls out sexism",
+                "91" : "How she plans incredible scavenger hunts",
+                "92" : "When she squints her face into a funny position",
+                "93" : "Honestly, everything.",
+                "94" : "Her Acting I presentation was the literal bomb dot com.",
+                "95" : "How amazing it is that she accomplished so much cool shit in her freshman year",
+                "96" : "She rocks the color black better than anyone I know.",
+                "97" : "When she says 'Mhmmmmmmm.'",
+                "98" : "When she gets all excited about the cool places on our map.",
+                "99" : "She knows more about the supernatural than anyone",
+                "100" : "She's a Leo. (Don't tell anyone I said that.)"
             }
         ]
-        var randomNumber = Math.floor(Math.random() * 55);
+        var min = Math.ceil(0);
+        var max = Math.floor(56);
+        var randomNumber = Math.floor(Math.random() * (max - min)) + min;
+        while(things[0][randomNumber] == undefined)
+            randomNumber = Math.floor(Math.random() * (max - min)) + min;
         document.getElementById("demo").innerHTML = things[0][randomNumber];
     }
     </script>
